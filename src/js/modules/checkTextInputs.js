@@ -3,7 +3,7 @@ function checkTextInputs(selector) {
   textInputs.forEach((input) => {
     input.addEventListener('keypress', function (evt) {
       // Разрешаем ввод только русских букв и цифр
-      if (evt.key.match(/[^а-яё 0-91]/gi)) {
+      if (evt.key.match(/[^а-яё 0-9]/gi)) {
         evt.preventDefault();
       }
     });
